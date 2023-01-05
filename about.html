@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Products - RedStore</title>  
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+       
+    <div class="container">
+        <div class="navbar">
+      <div class="brand">
+        <img  src="sports.jpg" width="125px">
+        </div> 
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+            <img src="cart.png" width="30px" height="30px">
+            <img src="menu.png" class="menu-icon" 
+            onclick="menutoggle()">
+    </div>   
+    
+    
+            <div class="small-container single-product">
+                 <div class="row">
+                        <div class="col-2">
+
+                            <img src="gallery-1.jpg" width="100%" id="product-img">
+                        <div class="small-img-row">
+                            <div class="small-img-col">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-2">
+         <p> Home/ T-shirt</p>
+         <h1>Red Print T-Shirt by HRX</h1>
+         <h4>$50.00</h4>
+         <select>
+            <option>Select Size</option>
+            <option>XXL</option>
+            <option>Lardge</option>
+            <option>Medium</option>
+            <option>Small</option>
+        </select>
+    <input type="number" value="1">
+    <a href="" class="btn">Add To Cart</a>
+    
+    <h3> Product Details <i class="fa fa-indent"></i></h3>
+    <br>
+    <p> Give your summer wardrobe a style upgrade
+         with the HRX men's Active T-Shirts. 
+        teams it with a pair  of short for your morning
+        workout or a denins an evening out with the guys.</p>
+    </div>
+          </div>       
+            
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    
+                    <div class="small-img-col">
+                        <img src="gallery-3.jpg" width="100%"lass="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-4.jpg" width="100%"lass="small-img">
+                  </div>
+                </div>
+            </div>
+
+            
+        <div class="row">
+            <div class="col-4">
+                <img src="product-2.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <span class="heading">User Rating</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+               
+                <p>$50.00</p>
+            </div>
+            
+            <div class="col-4">
+                <img src="product-3.jpg">
+                <h4>Rubber Shoes</h4>
+                <span class="heading">User Rating</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-4.jpg">
+                <h4>Jogging Pants</h4>
+                <span class="heading">User Rating</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p>$15.00</p>
+            </div>
+     </div>
+    </div>
+
+             <div class="footer">
+                <div class="consistency">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and ios mobile phone</p>
+                            <div class="app-logo">
+                                <img src="play-store.png">
+                                <img src="app-store.png">
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="sports.jpg">
+                            <p>Our Purpose is to sustainably make the pleasure Android
+                               and benifits of Sports Accessible to all.
+                            </p>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Follow us on</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>YouTube</li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright 2022- Creating a Website</p>
+                </div>
+             </div>
+
+             <script>
+                var MenuItems = document.getElementById("MenuItems");
+
+                MenuItems.style.maxHeight = "0px";
+
+                function menutoggle(){
+                    if( MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                    else
+                    {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                }
+             </script>
+
+<script>
+    var Productimg= document.getElementById("Productimg");
+    var smallimg= document.getElemenByclassname("small=img");
+    smallimg[0].onlick= function()
+    {
+        productimg.src = smallimg[0].src;
+    }
+    smallimg[1].onlick= function0()
+    {
+        productimg.src = smallimg[1].src;
+    }
+    smallimg[2].onlick= function(){
+        productimg.src = smallimg[2].src;
+    }
+    
+
+</script>
+</body>
+</html>
